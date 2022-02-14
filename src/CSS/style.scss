@@ -1,0 +1,58 @@
+.header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #155263; 
+    > div{
+        display: flex;
+        margin: 5px;
+         > a{
+            text-decoration: none;
+            margin: 10px;
+        }
+    }
+}
+
+.shop{
+    display: flex;
+    justify-content: space-between;
+    background: #ff9a3c; 
+}
+
+.product-container{
+    display: flex;
+    justify-content: space-between;
+}
+
+.img{
+    width: 10rem;
+    height: 10rem;
+}
+
+.card{
+    margin: 10px;
+}
+
+.addBtn{
+    background-color: blue;
+    margin: 10px;
+}
+
+.removeBtn{
+    background-color: red;
+    margin: 10px;
+}
+
+.total{
+    font-weight: bolder;
+}
+
+.cart{
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 20%;
+    background: #ffc93c; 
+}
