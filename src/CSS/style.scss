@@ -2,13 +2,14 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background: #155263; 
+    background: #2d4059; 
     > div{
         display: flex;
         margin: 5px;
          > a{
             text-decoration: none;
             margin: 10px;
+            color: #ff6f3c; ;
         }
     }
 }
@@ -17,6 +18,8 @@
     display: flex;
     justify-content: space-between;
     background: #ff9a3c; 
+    border-radius: 5px;
+    background: linear-gradient(275deg, rgba(255,220,60,1) 0%, rgba(255,154,60,1) 100%);
 }
 
 .product-container{
@@ -30,17 +33,31 @@
 }
 
 .card{
+    background-color: #ff803c;
     margin: 10px;
+    padding: 10px;
+    > img{
+        border-radius: 5px;
+    }
+    box-shadow: 1px 1px 1px #9149223f;
+}
+
+.card:hover{
+    box-shadow: 3px 3px 3px #9149223f;
 }
 
 .addBtn{
-    background-color: blue;
+    background-color:dimgray;
     margin: 10px;
+    font-size: large;
+    cursor: pointer;
 }
 
 .removeBtn{
-    background-color: red;
+    background-color: dimgray;
     margin: 10px;
+    font-size: large;
+    cursor: pointer;
 }
 
 .total{
@@ -48,11 +65,55 @@
 }
 
 .cart{
-    border-radius: 5px;
+    border-radius: 10px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     width: 20%;
-    background: #ffc93c; 
+    background: #39506d4c; 
 }
+
+.basket-add{
+    margin: 1em;
+    padding: 0.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: #dc5e483c; 
+    border-radius: 5px;
+    > div{
+        font-weight: bolder;
+    }
+}
+
+.checkout{
+    color: black;
+    background: rgba(249, 171, 2, 0.954);
+    position: absolute;
+    z-index: 100;
+    width: 100vw;
+    height: 100vh;
+    top: 0px;
+    bottom: 0px;
+    left: 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex: 1;
+    align-items: center;
+    > hr{
+        width:30%;
+    }
+    > form label,button,input,div{
+        font-size: larger;
+        
+    }
+    >form > *{
+        font-weight: bolder;
+        margin: 10px;
+        display: flex;
+        flex-direction: column;
+    }
+}
+

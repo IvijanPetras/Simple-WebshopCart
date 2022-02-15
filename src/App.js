@@ -8,6 +8,8 @@ import { useState } from 'react';
 
 function App() {
 
+  
+
   const { products } = items;
   const [cartItems, setCartItems] = useState([])
   const addToCart = (product) => {
@@ -29,6 +31,8 @@ function App() {
   }
 
   
+
+  
   return (
     <div className="App">
       <Header />
@@ -36,6 +40,9 @@ function App() {
         <Main addToCart={addToCart} products={products} />
         <Cart addToCart={addToCart} removeFromCart={removeFromCart} cartItems={cartItems} />
       </div>
+
+      
+      
     </div>
   );
 }

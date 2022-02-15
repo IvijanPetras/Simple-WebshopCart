@@ -26,7 +26,7 @@ const items = {
         },
         {
             name: "Water Leak Sensor", 
-            price: 19.99,
+            price: 14.99,
             id: '5',
             image: 'https://images.thdstatic.com/productImages/592ecb85-a127-4d57-b2ca-3ccd051b2f8f/svn/sabre-water-leak-detectors-hs-wla-64_1000.jpg'
         } 
