@@ -56,6 +56,16 @@ export default function Checkout(props) {
                 } 
             }
         >
+            
+            <label>Discount Code</label>
+            <input onChange={e => setText(e.target.value)} className='discount' type='text' value={text} />
+            <button  >Submit Code</button>
+            </form>
+            <form onSubmit={
+            (e) => {
+                e.preventDefault();
+                } 
+            }>
             <label>Email</label>
             <input autoFocus type='email' required/>
             <label>Address</label>
@@ -63,9 +73,6 @@ export default function Checkout(props) {
             <label>Credit card details</label>
             <input required type='text' placeholder='Card Number' />
             <input required type='text' placeholder='Name on Card' />
-            <label>Discount Code</label>
-            <input onChange={e => setText(e.target.value)} className='discount' type='text' value={text} />
-            <button  >Submit Code</button>
             <button>Order Now</button>
         </form>
         <div><h3>Total: {price.toFixed(2)}€</h3></div>
