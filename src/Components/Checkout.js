@@ -68,7 +68,7 @@ export default function Checkout(props) {
             <button  >Submit Code</button>
             <button>Order Now</button>
         </form>
-        <div><h3>{price.toFixed(2)}€</h3></div>
+        <div><h3>Total: {price.toFixed(2)}€</h3></div>
         
         
     </div>
