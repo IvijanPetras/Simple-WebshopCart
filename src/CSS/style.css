@@ -172,4 +172,41 @@
       -ms-flex-direction: column;
           flex-direction: column;
 }
+
+.order {
+  color: black;
+  background: #b6b899;
+  position: absolute;
+  z-index: 100;
+  width: 100vw;
+  height: 100vh;
+  top: 0px;
+  bottom: 0px;
+  left: 0px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.order > hr {
+  width: 300px;
+}
+
+.order > a {
+  text-decoration: none;
+  color: #000000;
+}
 /*# sourceMappingURL=style.css.map */

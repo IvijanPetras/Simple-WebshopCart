@@ -6,16 +6,23 @@ export default function Cart(props) {
    const { cartItems, addToCart, removeFromCart } = props;
    let itemsPrice = cartItems.reduce((a, c) => a + c.price * c.qty, 0);
    const [ checkout, setCheckout ] = useState('');
-
-      function check(e,d){
-        if(e === '2' && d >= 3){
-           itemsPrice = itemsPrice - 14.97;
+  
+      function check(id,qty){
+       
+  
+        if(id === '2' && qty % 3 === 0){
+           itemsPrice = itemsPrice - 9.97;
         }
-        else if(e === '4' && d >= 2){
-          itemsPrice = itemsPrice - 4.98;
+        
+        else if(id === '4' && qty % 2 === 0){
+          itemsPrice = itemsPrice - 4.98; 
         }
       }
 
+      function both(item, id, qty){
+        check(id, qty);
+        addToCart(item);
+      }
 
   return (
     <aside className='cart'>
@@ -26,11 +33,12 @@ export default function Cart(props) {
               <div key={item.id} className="basket-add" >
                   <div>{item.name}</div>
                   <div>
-                      <button onClick={() => addToCart(item), check(item.id, item.qty)} className="addBtn">+</button>
+                    {check(item.id, item.qty, item.price)}
+                      <button onClick={() => both(item, item.id, item.qty)} className="addBtn">+</button>
                       <button onClick={() => removeFromCart(item)} className="removeBtn">-</button>
+                      
                   </div>
                   <div>{item.qty} x {item.price.toFixed(2)}€</div>
-                  <div>{item.id}</div>
               </div>
             ))}
             <hr />
@@ -38,7 +46,7 @@ export default function Cart(props) {
             <br />
             <button onClick={() => setCheckout('checkout')}>Checkout</button>
       
-        <a href="/#checkout">{checkout === "checkout" && <Checkout cartItems={cartItems} total={itemsPrice} />}</a>
+        <a className='rmv' href="/#checkout">{checkout === "checkout" && <Checkout cartItems={cartItems} total={itemsPrice} />}</a>
         </div>
     </aside>
   )
