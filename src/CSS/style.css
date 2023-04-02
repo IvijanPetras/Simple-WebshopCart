@@ -1,48 +1,30 @@
 .header {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  background: #2d4059;
+  justify-content: space-between;
+  align-items: center;
+  background: #1a1a1a;
 }
-
 .header > div {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   margin: 5px;
 }
-
 .header > div > a {
   text-decoration: none;
   margin: 10px;
-  color: #ff6f3c;
+  color: #ffffff;
 }
 
 .shop {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  background: #ff9a3c;
+  justify-content: space-between;
+  padding: 5px;
+  background: #595151;
   border-radius: 5px;
-  background: linear-gradient(275deg, #ffdc3c 0%, #ff9a3c 100%);
 }
 
 .product-container {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  justify-content: space-between;
 }
 
 .img {
@@ -51,83 +33,66 @@
 }
 
 .card {
-  background-color: #ff803c;
+  background-color: #ffffff;
   margin: 10px;
   padding: 10px;
-  -webkit-box-shadow: 1px 1px 1px #9149223f;
-          box-shadow: 1px 1px 1px #9149223f;
+  box-shadow: 1px 1px 1px rgba(26, 26, 26, 0.2470588235);
 }
-
 .card > img {
   border-radius: 5px;
 }
 
 .card:hover {
-  -webkit-box-shadow: 3px 3px 3px #9149223f;
-          box-shadow: 3px 3px 3px #9149223f;
+  box-shadow: 3px 3px 3px rgba(26, 26, 26, 0.2470588235);
 }
 
 .addBtn {
-  background-color: dimgray;
+  background-color: #1a1a1a;
   margin: 10px;
   font-size: large;
   cursor: pointer;
+  color: #ffffff;
 }
 
 .removeBtn {
-  background-color: dimgray;
+  background-color: #1a1a1a;
   margin: 10px;
   font-size: large;
   cursor: pointer;
+  color: #ffffff;
 }
 
 .total {
   font-weight: bolder;
+  color: #1a1a1a;
 }
 
 .cart {
   border-radius: 10px;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   width: 20%;
-  background: #39506d4c;
+  background: #ffffff;
 }
 
 .basket-add {
   margin: 1em;
   padding: 0.5rem;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  background: #dc5e483c;
+  flex-direction: column;
+  align-items: center;
+  background: #e84630;
   border-radius: 5px;
 }
-
 .basket-add > div {
   font-weight: bolder;
 }
 
 .checkout {
-  color: black;
-  background: rgba(249, 171, 2, 0.954);
+  color: #fff;
+  background: #595151;
   position: absolute;
   z-index: 100;
   width: 100vw;
@@ -135,47 +100,31 @@
   top: 0px;
   bottom: 0px;
   left: 0px;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-flex: 1;
-      -ms-flex: 1;
-          flex: 1;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  flex: 1;
+  align-items: center;
 }
-
 .checkout > hr {
   width: 30%;
 }
-
-.checkout > form label, .checkout button, .checkout input, .checkout div {
+.checkout > form label,
+.checkout button,
+.checkout input,
+.checkout div {
   font-size: larger;
 }
-
 .checkout > form > * {
   font-weight: bolder;
   margin: 10px;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  flex-direction: column;
 }
 
 .order {
-  color: black;
-  background: #b6b899;
+  color: #1a1a1a;
+  background: #595151;
   position: absolute;
   z-index: 100;
   width: 100vw;
@@ -183,30 +132,27 @@
   top: 0px;
   bottom: 0px;
   left: 0px;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-flex: 1;
-      -ms-flex: 1;
-          flex: 1;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  flex: 1;
+  align-items: center;
 }
-
 .order > hr {
   width: 300px;
 }
-
 .order > a {
   text-decoration: none;
-  color: #000000;
 }
-/*# sourceMappingURL=style.css.map */
+
+h4, h2 {
+  color: #fff;
+}
+
+.discount::-moz-placeholder {
+  font-size: 14px;
+}
+
+.discount::placeholder {
+  font-size: 14px;
+}/*# sourceMappingURL=style.css.map */

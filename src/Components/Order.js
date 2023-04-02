@@ -9,12 +9,12 @@ export default function Order(props) {
     <div className='order'>Your Order
     <hr />
     
-    <div className='summary'>{cartItems.map((item) => (
-      <div key={item.id} >{item.name} x {item.qty} ( {item.price} €) </div>
+    <div style={{fontWeight : "300"}} className='summary'>{cartItems.map((item) => (
+      <div style={{color : "#fff"}} key={item.id} >{item.name} x {item.qty} ( <span style={{fontWeight : "900"}}>{item.price}</span>  €) </div>
     ))}</div>
     <br/>
     <hr />
-    <div>Total: {total.toFixed(2)}€</div>
+    <div>Total: <span style={{color : "#fff"}}>{total.toFixed(2)} €</span></div>
     <br />
     <br />
     <button onClick={() => window.location.reload('/')} >Go back</button>

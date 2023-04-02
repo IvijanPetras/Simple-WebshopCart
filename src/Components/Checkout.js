@@ -7,8 +7,6 @@ let b = 0;
 let c = 0;
 export default function Checkout(props) {
 
-    const elmnt = document.querySelector('.checkout');
-
    const { cartItems, total } = props;
 
    const [order, setOrder] = useState('');
@@ -90,7 +88,7 @@ export default function Checkout(props) {
 
         <h1>Your Order</h1>
         {cartItems.map((item) => (
-            <div key={item.id}>{item.name} x {item.qty} {item.price}€</div>
+            <div key={item.id}>{item.name} x {item.qty} <span style={{fontWeight : "900"}}>{item.price}</span> €</div>
             
             )
         )}
@@ -106,7 +104,7 @@ export default function Checkout(props) {
         >
             
             <label>Discount Code</label>
-            <input onChange={e => setText(e.target.value)} className='discount' type='text' value={text} />
+            <input onChange={e => setText(e.target.value)} className='discount' type='text' value={text} placeholder="// 20%OFF - 20EUROFF - 5%OFF" />
             <button  >Submit Code</button>
             </form>
             <div>Discounts: {discLabel} {discLabel2}  {discLabel3}</div>
